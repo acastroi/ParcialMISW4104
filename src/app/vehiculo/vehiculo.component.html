@@ -1,0 +1,41 @@
+<img src="assets/encabezado.png" class="center"/>
+<div class="container-fluid">
+  <div class="col-3">
+      <table class="table" class="table th-dark">
+        <thead>
+          <tr>
+            <th class="h4">#</th>
+            <th class="h4">Marca</th>
+            <th class="h4">Linea</th>
+            <th class="h4">Modelo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let v of vehiculos">
+            <td>{{v.id}}</td>
+            <td>{{v.marca}}</td>
+            <td>{{v.linea}}</td>
+            <td>{{v.modelo}}</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  <br/>
+  <div class="col-3">
+    <table class="table" class="table th-dark">
+      <thead>
+        <tr>
+          <th class="h4">Marca</th>
+          <th class="h4">Cantidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let g of vehiculosByMarca">
+          <td>{{g.marca}}</td>
+          <td>{{g.cantidad}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+</div>
+</div>
